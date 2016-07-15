@@ -4,3 +4,9 @@ C:\Users\flavia.ferreira\Desktop\Transformacao\Transformacao\bin\Debug\Transform
 C:\Users\flavia.ferreira\Desktop\Transformacao\Transformacao\bin\Debug\Transformacao.pdb
 C:\Users\flavia.ferreira\Desktop\Transformacao\Transformacao\obj\Debug\Transformacao.exe
 C:\Users\flavia.ferreira\Desktop\Transformacao\Transformacao\obj\Debug\Transformacao.pdb
+C:\Users\flavia.ferreira\Desktop\GitHub\DecimalTOBinary\Transformacao\Transformacao\bin\Debug\Transformacao.exe.config
+C:\Users\flavia.ferreira\Desktop\GitHub\DecimalTOBinary\Transformacao\Transformacao\obj\Debug\Transformacao.exe
+C:\Users\flavia.ferreira\Desktop\GitHub\DecimalTOBinary\Transformacao\Transformacao\obj\Debug\Transformacao.pdb
+C:\Users\flavia.ferreira\Desktop\GitHub\DecimalTOBinary\Transformacao\Transformacao\obj\Debug\Transformacao.csprojResolveAssemblyReference.cache
+C:\Users\flavia.ferreira\Desktop\GitHub\DecimalTOBinary\Transformacao\Transformacao\bin\Debug\Transformacao.exe
+C:\Users\flavia.ferreira\Desktop\GitHub\DecimalTOBinary\Transformacao\Transformacao\bin\Debug\Transformacao.pdb

@@ -12,7 +12,7 @@ namespace Transformacao
         {
            Contas p = new Contas();          
             Console.WriteLine("Qual número voce deseja converter?");
-            try
+          /*  try
             {
                
                 p.limit = int.Parse(Console.ReadLine()); 
@@ -26,10 +26,11 @@ namespace Transformacao
                 Console.WriteLine("ERR0!!!");
                 Console.ReadKey();
                 Environment.Exit(0);
-            }
+            }*/
 
            // p.DecimalToBinario(p.limit);
-            p.BinarioToDecimal(p.limit);
+            //p.BinarioToDecimal(p.limit);
+            p.HexToDecimal(Console.ReadLine());
           //  Console.WriteLine(divisao);
 
             Console.ReadKey();
