@@ -10,8 +10,7 @@ namespace Transformacao
     {
         static void Main(string[] args)
         {
-           Contas p = new Contas();
-
+           Contas p = new Contas();          
             Console.WriteLine("Qual número voce deseja converter?");
             try
             {
@@ -29,7 +28,8 @@ namespace Transformacao
                 Environment.Exit(0);
             }
 
-            p.DecimalToBinario(p.limit);
+           // p.DecimalToBinario(p.limit);
+            p.BinarioToDecimal(p.limit);
           //  Console.WriteLine(divisao);
 
             Console.ReadKey();

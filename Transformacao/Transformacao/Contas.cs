@@ -31,6 +31,27 @@ namespace Transformacao
                 Console.Write (Reverse( Final));     
                 Console.ReadKey();
         }
+
+        public void BinarioToDecimal(int limit)
+        {
+           string temp= Reverse( limit.ToString());
+           Console.WriteLine(temp);
+           int result;
+           int finalR = 0 ; 
+            for (int i = 0;i<temp.Length;i++)
+            {
+                Console.WriteLine("o numero testado é " + int.Parse(temp[i].ToString())+" valor i "+i);
+                result = int.Parse(temp[i].ToString()) * Convert.ToInt32(Math.Pow(2,i));
+                //result += result;
+                Console.WriteLine(result);
+                finalR += result;
+            }
+            Console.WriteLine("resultado " + finalR);
+        }
+
+
+
+
         public static string Reverse(string s)
         {
             char[] charArray = s.ToCharArray();
