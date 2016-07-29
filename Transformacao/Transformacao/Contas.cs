@@ -13,12 +13,13 @@ namespace Transformacao
        List<int> Restos = new List<int>();
        int controle = 0;
        string Final = "";
+     
     
-        public void DecimalToBinario(int limit)
+        public int DecimalToBinario(int limit)
         {
                 controle = 0; 
                 result = limit;
-
+                Restos = new List<int>();
                 while (result > 1)
                 {
                     Restos.Add(result % 2);
@@ -28,27 +29,29 @@ namespace Transformacao
                 }
                 Restos.Add(result);
                 Final+=Restos[controle].ToString();
-                Console.Write (Reverse( Final));     
-                Console.ReadKey();
+                
+                return int.Parse(Reverse(Final));
+
         }
 
-        public void BinarioToDecimal(int limit)
+        public int BinarioToDecimal(int limit)
         {
            string temp= Reverse( limit.ToString());
-           Console.WriteLine(temp);
+           //Console.WriteLine(temp);
            int result;
            int finalR = 0 ; 
             for (int i = 0;i<temp.Length;i++)
             {
-                Console.WriteLine("o numero testado é " + int.Parse(temp[i].ToString())+" valor i "+i);
+               // Console.WriteLine("o numero testado é " + int.Parse(temp[i].ToString())+" valor i "+i);
                 result = int.Parse(temp[i].ToString()) * Convert.ToInt32(Math.Pow(2,i));
                 //result += result;
-                Console.WriteLine(result);
+               // Console.WriteLine(result);
                 finalR += result;
             }
-            Console.WriteLine("resultado " + finalR);
+            
+            return finalR;
         }
-        public void HexToDecimal(string hex)
+        public int HexToDecimal(string hex)
         {
             int result =0 ; 
             string temp = Reverse(hex);
@@ -95,9 +98,57 @@ namespace Transformacao
                 //Console.WriteLine("valor " + result);
                 resultFinal += result;
             }
-            Console.WriteLine("Resultado Final " + resultFinal);
+            return  resultFinal;
+        }
+        public string  DecimalToHex(int limit )
+        {
+            Restos = new List<int>() ;
+            int controll = 0; 
+             int result2 = limit;
+             
+             while (result2 > 1)
+                {
+                    Restos.Add(result2 % 16);
+                    result2 = result2/16;
+                 switch(Restos[controll])
+                 {  
+                     case 10:
+                         Final += "A";
+                         break;
+                         case 11:
+                         Final += "B";
+                         break;
+                         case 12:
+                         Final += "C";
+                         break;
+                         case 13:
+                         Final += "D";
+                         break;
+                         case 14:
+                         Final += "E";
+                         break;
+                          case 15:
+                         Final += "F";
+                         break;
+
+                     default:
+                          Final += Restos[controll].ToString();
+                         break;
+
+                 }                   
+                    
+                    //Console.WriteLine(Restos[controll]);
+                  //  Console.Write("divisores:" + result2);
+                    controll++;
+                                       
+                }
+           //  Restos.Add(result2);
+           //  Final += Restos[controll].ToString();
+           return Reverse(Final);             
         }
 
+
+         
 
 
 
